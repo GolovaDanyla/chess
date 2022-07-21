@@ -2,5 +2,6 @@
   <button [ngClass]="{
     'cell': true,
     'black': pos(i)
-  }" mat-raised-button *ngFor="let b of cells; let i = index"> {{figures[i % 12] }}</button>
+  }" mat-raised-button *ngFor="let cell of cells; let i = index"
+  (click) = "oneClick (i)"> {{ cell }}</button>
 </div>
