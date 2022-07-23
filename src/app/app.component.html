@@ -1,7 +1,17 @@
-<div class="container">
-  <button [ngClass]="{
-    'cell': true,
-    'black': pos(i)
-  }" mat-raised-button *ngFor="let cell of cells; let i = index"
-  (click) = "oneClick (i)"> {{ cell }}</button>
+<div class="polygon">
+
+  <button  mat-button style="color: #fff;"> Ход {{ currentMove ? 'Белых' : 'Черных' }}</button>
+  
+  <div class="container">
+    <button [ngClass]="{
+      'cell': true,
+      'black': posArr[i],
+      'active': i === active,
+      'white': isWhite(cell)
+    }" mat-raised-button *ngFor="let cell of cells; let i = index"
+    
+    (click) = "oneClick (i)"> 
+    <!-- <span style="font-size: 5px;">{{i}}</span> -->
+    {{ cell }}</button>
+  </div>
 </div>
