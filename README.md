@@ -1,1 +1,1 @@
-https://GolovaDanyla/github.io/chess
+<a href = "http://chees.from.danyla/">DEMO</a>
