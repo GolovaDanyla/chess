@@ -1,1 +1,1 @@
-<a href = "http://chees.from.danyla/">DEMO</a>
+<a href = "https://golovadanyla.github.io/chess/">DEMO</a>
